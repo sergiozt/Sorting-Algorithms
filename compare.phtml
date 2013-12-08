@@ -1,0 +1,59 @@
+<?php
+include_once('sortingCompareScript.php')
+?>
+
+
+
+<h1>Compare Time Execution Using Merge, Selection And Insertion Sorting Algorithms</h1>
+
+
+<table>
+    <tr>
+        <td style="background-color: greenyellow">Qty / Type</td>
+        <td class="gray">Merge</td>
+        <td class="gray">Selection</td>
+        <td class="gray">Insertion</td>
+    </tr>
+    <tr>
+        <td class="gray">100</td>
+        <td><?php echo round($timeMerge100,4) ?> (sec)</td>
+        <td><?php echo round($timeSelection100,4) ?> (sec)</td>
+        <td><?php echo round($timeInsertion100,4) ?> (sec)</td>
+    </tr>
+    <tr>
+        <td class="gray">500</td>
+        <td><?php echo  round($timeMerge500,4)  ?> (sec)</td>
+        <td><?php echo  round($timeSelection500,4)  ?> (sec)</td>
+        <td><?php echo round($timeInsertion500,4) ?> (sec)</td>
+    </tr>
+    <tr>
+        <td class="gray">1000</td>
+        <td><?php echo  round($timeMerge1000,4)  ?> (sec)</td>
+        <td><?php echo  round($timeSelection1000,4)  ?> (sec)</td>
+        <td><?php echo round($timeInsertion1000,4) ?> (sec)</td>
+    </tr>
+    <tr>
+        <td class="gray">5000</td>
+        <td><?php echo  round($timeMerge5000,4)  ?> (sec)</td>
+        <td><?php echo  round($timeSelection5000,4)  ?> (sec)</td>
+        <td><?php echo round($timeInsertion5000,4) ?> (sec)</td>
+    </tr>
+
+</table>
+<style>
+    td{
+        min-width: 300px;
+        border : 1px solid darkblue;
+        border-collapse: collapse;
+        padding: 5px;
+        font-size: 28px !important;
+    }
+    table {
+        text-align: center;
+        border-collapse: collapse;
+    }
+    .gray {
+
+        background-color: darkgray;
+    }
+</style>
